@@ -47,23 +47,9 @@ public class CalcularMediaCores {
 
         for(int i = 0; i < mediaFinal.length; i ++){
             for(int j = 0; j < mediaFinal[0].length; j ++){
-                int red = mediaAnoX[i][j][0] - mediaAnoY[i][j][0];
-
-                if(red < 0){
-                    red = red * -1;
-                }
-
-                int green = mediaAnoX[i][j][1] - mediaAnoY[i][j][1];
-
-                if(green < 0){
-                    green = green * -1;
-                }
-
-                int blue = mediaAnoX[i][j][2] - mediaAnoY[i][j][2];
-
-                if(blue < 0){
-                    blue = blue * -1;
-                }
+                int red = Math.abs(mediaAnoX[i][j][0] - mediaAnoY[i][j][0]);
+                int green = Math.abs(mediaAnoX[i][j][1] - mediaAnoY[i][j][1]);
+                int blue = Math.abs(mediaAnoX[i][j][2] - mediaAnoY[i][j][2]);
                 
                 mediaFinal[i][j][0] = red;
                 mediaFinal[i][j][1] = green;
