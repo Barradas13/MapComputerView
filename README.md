@@ -1,8 +1,14 @@
 # MapComputerView
-This project uses computer view to build images based on maps of heat on Brazil.
-The idea here is to analise the difference between years of temperatures on Brazil
-we can first analise based on the difference maps that the change on temperatures
-is constant, but nowadays started to be in the hole contry, not only in the regions
-it mostly happened.
-We used the maps of INMET and the code are not only for Brazilian maps, it can interprete
-the maps you want, it only needs to be padronized (same size, positions, colors pattern etc)
+
+This repository contains programs for visualizing temperature maps by year and calculating the differences between them. The maps are generated based on temperature data, allowing for easy comparison between different years. We used this idea for a presentation on V SCIENTIF which was published on the following link: https://ifpr.edu.br/cascavel/wp-content/uploads/sites/8/2024/12/Anais-do-V-Scientif-1.pdf PAGE 137.
+
+## Maps Overview
+
+- **mapa-year**: Represents the temperature map for a specific year (e.g., mapa-1970, mapa-1990).
+  
+- **diferenca9070**: Represents the difference in temperature between two years (1990 - 1970). Positive values indicate warming, while negative values indicate cooling.
+
+## Usage
+
+Clone the repository:
+Feel free to contribute by submitting pull requests or opening issues for improvements and bug fixes.
